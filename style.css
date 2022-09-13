@@ -241,14 +241,22 @@ button:hover {
     grid-template-columns: 2fr 1fr;
 }
 
+h2 {
+    margin: 2rem 0 0 2.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .mainBlock {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(250px, 0.5fr));
-    padding: 2rem;
+    padding: 1rem 2rem;
     gap: 2rem;
     max-height: 100%;
 }
+
+
 
 .card {
     background-color: rgb(94,129,172);
