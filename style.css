@@ -7,7 +7,27 @@
     --color4:#5e81ac;
 
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #5e81ac #ffffff;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--color0);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #5e81ac;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
 
 body {
     color: #ECEFF4;
@@ -224,9 +244,10 @@ button:hover {
 .mainBlock {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(250px, 0.5fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 0.5fr));
     padding: 2rem;
     gap: 2rem;
+    max-height: 100%;
 }
 
 .card {
@@ -256,7 +277,7 @@ button:hover {
 }
 
 .card_content {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-shadow: 0 5px 10px rgb(0 0 0 / 25%);;
 }
 
@@ -287,4 +308,8 @@ button:hover {
 
 .mainBlock #rps:hover {
     background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 0.8) 2%),url(assets/rps-preview.png);
+}
+
+.mainBlock #odin:hover {
+    background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 0.8) 2%),url(assets/odin-preview.png);
 }
