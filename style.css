@@ -250,10 +250,10 @@ h2 {
 .mainBlock {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px, 0.5fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
     padding: 1rem 2rem;
     gap: 2rem;
-    max-height: 100%;
+    max-height: fit-content;
 }
 
 
@@ -321,3 +321,4 @@ h2 {
 .mainBlock #odin:hover {
     background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 0.8) 2%),url(assets/odin-preview.png);
 }
+
