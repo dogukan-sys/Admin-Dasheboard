@@ -249,8 +249,8 @@ h2 {
 
 .mainBlock {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(450px, 1fr));
+    grid-auto-rows: 300px;
     padding: 1rem 2rem;
     gap: 2rem;
     max-height: fit-content;
@@ -264,7 +264,6 @@ h2 {
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 5px 7px rgb(0 0 0 / 35%);
-    transition: 0.2s ease-in-out;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
     padding: 2rem;
@@ -322,3 +321,54 @@ h2 {
     background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 0.8) 2%),url(assets/odin-preview.png);
 }
 
+/* right cards */
+
+.rightBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ann_Card {
+    display: grid;
+    grid-template-rows: repeat(auto-fit,1fr);
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgb(94,129,172);
+    background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 1) 2%);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgb(0 0 0 / 35%);
+    margin: 1.1rem 3rem 1rem 0rem;
+}
+
+.topic_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 10px 10px rgb(0 0 0 / 35%);
+}
+.ann_Card .topic:first-child > p {
+    border-top: none;
+}
+
+.topic_content{
+    border-bottom: 1px solid #ECEFF4;
+    padding-bottom: 1rem;
+}
+
+.ann_Card .topic:last-child > p {
+    border: none;
+}
+
+.tren_Card {
+    display: grid;
+    grid-template-rows: repeat(auto-fit,1fr);
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgb(94,129,172);
+    background-image: linear-gradient(90deg, rgba(94,129,172,1) 2%, rgba(46, 52, 64, 1) 2%);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgb(0 0 0 / 35%);
+    margin: 1.1rem 3rem 1rem 0rem;
+}
